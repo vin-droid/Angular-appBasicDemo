@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="eventapp">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-resource.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.min.js">
+   </script>
+    <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.9.0/angularfire.min.js"></script>
+    <script src="scripts/controllers/eventCtrl.js"></script>
+    <script src="scripts/app.js"></script>
+</head>
+<body ng-controller="eventCtrl">
+<ul>
+	<li ng-repeat="event in eventlist">
+		{{event.name}}
+	</li>
+</ul>
+
+</body>
+</html>
